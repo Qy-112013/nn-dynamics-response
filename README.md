@@ -64,3 +64,7 @@ Reviewer comments, an editor/AE decision letter, a previous response draft, or a
 
 Adapted for the group's direction from the Nature-portfolio `nature-response` skill (kept
 intact as a separate Nature tool).
+
+## License
+
+MIT — see [LICENSE](LICENSE).
