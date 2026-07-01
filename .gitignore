@@ -1,0 +1,24 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*~
+
+# LaTeX build artifacts (from compiling assets/reply-template.tex locally)
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.dvi
+
+# Never commit compiled PDFs — a rendered letter may contain confidential manuscript text
+*.pdf

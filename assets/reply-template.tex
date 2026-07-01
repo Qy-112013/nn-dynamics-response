@@ -1,0 +1,210 @@
+%% =====================================================================
+%%  GROUP HOUSE-STYLE REVIEWER RESPONSE LETTER  —  "SUMMARY OF CHANGES"
+%%  Skill: nn-dynamics-response   |   IEEEtran "SUMMARY OF CHANGES" reply
+%% ---------------------------------------------------------------------
+%%  HOW TO USE THIS SCAFFOLD
+%%   1. Fill the three metadata macros below (\msid, \papertitle, \authors).
+%%   2. One "recipient page" per recipient: Editor-in-Chief, each Associate
+%%      Editor, then each Reviewer. Pages are separated by \vfill\newpage.
+%%   3. Inside each page, one \item per comment: 0) = the overall comment,
+%%      then 1), 2), ... Quote the comment VERBATIM in \textit{``...''}.
+%%   4. Paste author-supplied revised text/eqns/figures/tables in
+%%      \textcolor{blue}{...}; never invent content -> use AUTHOR_INPUT_NEEDED.
+%%   5. Reference style MUST mirror the corresponding manuscript (see the
+%%      "ADDED REFERENCES" note far below) — IEEE numeric vs. author-year.
+%% =====================================================================
+\documentclass[letter,onecolumn,11pt]{IEEEtran}
+%\documentclass[letter,onecolumn,11pt,dvips]{IEEEtran}  %% some letters use dvips
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{latexsym}
+\usepackage{psfrag}
+\usepackage{epsfig}
+\usepackage{graphicx,subfigure} %% legacy; modern TeX: \usepackage{subcaption}
+\usepackage{graphicx,color}
+\usepackage{cite}
+\usepackage{enumerate}
+\usepackage{flushend}
+\usepackage{multirow}
+\usepackage{makecell}
+%\usepackage{caption2}   %% the group's IEEE letters load this; it is OBSOLETE on
+                         %% modern TeX Live. Uncomment ONLY if your system has it.
+\usepackage{amsmath}
+\usepackage{float}       %% [H] "HERE" placement: keeps a reply's figure/table inside
+                         %% its own comment so it never floats into the next one
+%% --- optional, add per manuscript as needed -------------------------
+%\usepackage{algorithm}\usepackage{algpseudocode}  %% RL / algorithm papers (TAI)
+%\usepackage{booktabs}\usepackage{array}\usepackage{bm} %% Science China (SCIS)
+%% -------------------------------------------------------------------
+\setlength{\textwidth}{17cm}
+
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{thm}{Theorem}
+
+%% ---- metadata: edit once, reused on every recipient page -----------
+\newcommand{\msid}{XXXX-2025-0000R1}                 %% >>> EDIT
+\newcommand{\papertitle}{Paper Title Goes Here}      %% >>> EDIT
+%% Author list format mirrors the manuscript: IEEE = "First Last, First Last";
+%% Science China = surname-first caps "SURNAME Given, SURNAME Given".
+\newcommand{\authors}{First Author, Second Author, Third Author}  %% >>> EDIT
+
+%% ---- repeated "SUMMARY OF CHANGES" header (identical output to the
+%%      group's hand-repeated block; defined once for maintainability) --
+\newcommand{\soheader}{%
+  \begin{center}
+  {\LARGE \textbf{SUMMARY OF CHANGES}}\vspace{2ex}\\
+  {\LARGE \textbf{Replies to the Editor-in-Chief's, the Associate
+  Editor's and the Reviewers' Comments}}
+  \end{center}
+  \bigskip
+  \noindent
+  \textbf{Manuscript ID}: \msid\\
+  \textbf{Paper Title}: \papertitle\\
+  \textbf{Author(s)}: \authors
+}
+%% recipient title, e.g. \recipient{Reply to Reviewer 1}
+\newcommand{\recipient}[1]{\vspace{4ex} \noindent \underline{\Large \textbf{#1}}}
+
+\begin{document}
+\graphicspath{{figures/}}
+\setlength{\baselineskip}{20pt}
+
+%% =====================================================================
+%%  PAGE 1 — REPLY TO THE EDITOR-IN-CHIEF
+%% =====================================================================
+\soheader
+\recipient{Reply to the Editor-in-Chief}
+
+\vspace{2ex} The authors appreciate the Editor-in-Chief's, the Associate Editor's and the reviewers' insightful comments and constructive suggestions. In light of the comments and suggestions of the Associate Editor and the reviewers, we have tried our best to make a very careful revision of the paper. The revisions suggested by the reviewers are highlighted in \textcolor{blue}{blue font} in the revised paper.
+
+\begin{enumerate}[1)]
+\item[0)] \textbf{Your comment and suggestion}: \ \textit{``[Paste the Editor-in-Chief's decision letter VERBATIM here.]"}
+\vspace{2ex}
+
+\textbf{Our reply}: \ Thanks the Editor-in-Chief for the time and efforts in handling the paper and for providing the opportunity to revise the manuscript. We appreciate you very much for your constructive suggestions and comments on our manuscript entitled ``\papertitle"  (ID: \msid). In light of the comments of the Associate Editor and the reviewers, we have tried our best to revise our manuscript. \\
+
+\vspace{2ex}
+\textbf{Some key points of the revision are:}
+\vspace{2ex}
+\begin{enumerate}[$\bullet$]
+\item According to Reviewer 1's comments, we have [global change] (please see page N of Section X in the revised version for details).
+\vspace{2ex}
+\item According to Reviewer 2's comments, we have [global change] (please see pages N--M of Section X in the revised version for details).
+\end{enumerate}
+\end{enumerate}
+
+\vfill\newpage
+%% =====================================================================
+%%  PAGE 2 — REPLY TO ASSOCIATE EDITOR   (duplicate for AE 1 / AE 2 if needed)
+%% =====================================================================
+\soheader
+\recipient{Reply to Associate Editor}
+
+\vspace{2ex} The authors appreciate the Associate Editor's and the reviewers' insightful comments and constructive suggestions. In light of the comments and suggestions of the Associate Editor and the reviewers, we have tried our best to make a very careful revision of the paper. The \textcolor{blue}{blue font} are revisions suggested by the reviewers.
+
+\vspace{2ex}
+\begin{enumerate}[1)]
+\item[0)] \textbf{Your comment and suggestion}: \ \textit{``[Paste the Associate Editor's comment VERBATIM here.]"}
+\vspace{2ex}
+
+\textbf{Our reply}: \ Thanks the Associate Editor for your summary and pointing out these problems. In light of the comments of the reviewers, we have tried our best to make a very careful revision of the paper. \\
+
+\vspace{2ex}
+\textbf{Some key points of the revision are:}
+\vspace{2ex}
+\begin{enumerate}[$\bullet$]
+\item According to Reviewer 1's comments, we have [global change] (please see page N of Section X in the revised version for details).
+\end{enumerate}
+\end{enumerate}
+
+\vfill\newpage
+%% =====================================================================
+%%  PAGE 3 — REPLY TO REVIEWER 1   (duplicate this page per reviewer)
+%% =====================================================================
+\soheader
+\recipient{Reply to Reviewer 1}
+
+\vspace{2ex} The authors wish to express their appreciation to the reviewers for insightful comments and useful suggestions. Without the reviewers' help, the paper cannot reach the present much improved level.
+
+\vspace{2ex}
+\begin{enumerate}[1)]
+%% --- 0) overall comment (usually a summary / recommendation) --------
+\item[0)] \textbf{Your comment and suggestion}: \ \textit{``[Reviewer 1's overall assessment, VERBATIM.]"}
+
+\vspace{2ex}
+\textbf{Our reply}: \ Thanks the reviewer very much for the encouraging comments and for the positive recommendation.
+
+%% --- 1) a plain point: acknowledge -> action -> location ------------
+\vspace{2ex}
+\item[1)] \textbf{Your comment and suggestion}: \ \textit{``[Comment 1, VERBATIM.]"}
+
+\vspace{2ex} \textbf{Our reply}: \ Thanks the reviewer for pointing out this problem. According to your comment, we have [action taken] (please see page N of Section X in the revised version for details).
+
+%% --- 2) a point where you PASTE the revised manuscript text in blue --
+\vspace{2ex}
+\item[2)] \textbf{Your comment and suggestion}: \ \textit{``[Comment 2, VERBATIM.]"}
+
+\vspace{2ex} \textbf{Our reply}: \ Thanks the reviewer for this constructive suggestion. In response, we have added the following statement to the manuscript.
+
+\vspace{2ex}
+%% Paste ONLY author-supplied revised text. If not supplied, use the red,
+%% underscore-free placeholder below (raw "_" breaks LaTeX in text mode).
+\textcolor{blue}{[Paste the exact revised paragraph / equation here, e.g. a new Remark.
+Match the manuscript's citation style: IEEE ``[12]'' or author-year ``(Malizia et al., 2025)''.]}
+%\textcolor{red}{[AUTHOR INPUT NEEDED: revised text for Comment 2 not yet provided]}
+
+\vspace{2ex}
+In the revised version, we have added the above statement in Section X on page N.
+
+%% --- 3) a point where you PASTE a figure (align numbering!) ---------
+%% Use [H] (float package) so the figure is LOCKED here, under this reply,
+%% and cannot drift into the next comment. Tables: use [H] too.
+%% \newpage does NOT flush a float; only [H] / \clearpage / \FloatBarrier do.
+\vspace{2ex}
+\item[3)] \textbf{Your comment and suggestion}: \ \textit{``[Comment 3 about a figure, VERBATIM.]"}
+
+\vspace{2ex} \textbf{Our reply}: \ Thanks the reviewer for this suggestion. We have redrawn the figure as shown below (please see page N of Section X in the revised version for details).
+
+\setcounter{figure}{0}  %% >>> set to (manuscript figure number - 1)
+\begin{figure}[H]       %% H = HERE, locked in place (needs \usepackage{float})
+\centering
+%% real pattern: \includegraphics[width=0.6\columnwidth]{your_figure.eps}
+\fbox{\rule{0pt}{3cm}\rule{0.55\columnwidth}{0pt}} %% placeholder so this compiles
+\caption{\textcolor{blue}{[Revised figure caption, matching the manuscript.]}}
+\end{figure}
+
+%% --- closing bullet summary for this reviewer ----------------------
+\vspace{2ex} \textbf{Other significant changes in the paper:}
+\vspace{2ex}
+\begin{enumerate}[$\bullet$]
+\item According to Reviewer 2's comments, we have [change] (please see page N of Section X in the revised version for details).
+\end{enumerate}
+\end{enumerate}
+
+\vfill\newpage
+%% =====================================================================
+%%  ADDED / MODIFIED REFERENCES — STYLE MIRRORS THE MANUSCRIPT
+%% ---------------------------------------------------------------------
+%%  When a comment asks for new citations, list them in the SAME format as
+%%  the corresponding manuscript's bibliography. Two house variants:
+%%
+%%  (A) IEEE numeric (TSMC-S, TCYB, TAI, TCAS-I, TNNLS, Science China):
+%%      \item [{[35]}] S. Kundu and D. Ghosh, ``Higher-order interactions
+%%      promote chimera states,'' \textit{Phys. Rev. E}, vol. 105, no. 4,
+%%      Apr. 2022, Art. no. 042202.
+%%
+%%  (B) Elsevier author-year (Neural Networks):
+%%      \textcolor{blue}{Malizia, F., Lamata-Otin, S., Frasca, M., Latora, V., \&
+%%      G\'omez-Garde\~nes, J. (2025). Hyperedge overlap drives explosive
+%%      transitions in systems with higher-order interactions.
+%%      \textit{Nature Communications}, \textit{16}, 555.}
+%%
+%%  Across revisions, cross-reference old->new numbers, e.g.
+%%  "references [10], [20] (references [13], [23] in the revised version)".
+%% =====================================================================
+\end{document}
