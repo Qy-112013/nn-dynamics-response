@@ -13,7 +13,7 @@ numbering), not by preference. Detect these per submission.
 - Recipient order: **Editor-in-Chief → Associate Editor(s) → Reviewer 1 … N**. One or two AEs.
 - Underlined large header: `\underline{\Large \textbf{Reply to ...}}`.
 - `\begin{enumerate}[1)]` with `\item[0)]` for the overall comment, then `1)`, `2)`, …
-- Comment marker `\textbf{Your comment and suggestion}: \ \textit{``…''}`; reply marker
+- Comment marker `\textbf{Your comment and suggestion}: \ \textit{``…"}`; reply marker
   `\textbf{Our reply}: \ …`.
 - Highlight new manuscript text with `\textcolor{blue}{…}`; describe it as **"blue font"**.
 - Paste added content inline; align numbering with `\setcounter{remark|figure|table}{n-1}`.

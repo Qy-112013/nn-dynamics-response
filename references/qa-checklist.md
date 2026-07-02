@@ -28,7 +28,7 @@
 
 ## LaTeX compile sanity
 - [ ] `\documentclass[...]{IEEEtran}` (class not switched); preamble matches house-style.md.
-- [ ] Braces / `\begin{}`…`\end{}` / `\textcolor{blue}{…}` balanced; quotes are ``…''.
+- [ ] Braces / `\begin{}`…`\end{}` / `\textcolor{blue}{…}` balanced; quotes open with `` `` `` and close with `''` or `"` (both render as a right double quote — the house letters use `` ``…" ``).
 - [ ] `% & _ # $ ^ ~ \` escaped inside quoted comments.
 - [ ] `\vfill\newpage` between recipient pages; document ends with `\end{document}`.
 - [ ] Every figure/table is `[H]`-locked (or `\clearpage`/`\FloatBarrier`-fenced) so no float drifts into the next comment/recipient — confirm visually in the compiled PDF, not just that it compiles.

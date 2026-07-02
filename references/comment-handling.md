@@ -18,9 +18,11 @@ never invent a reviewer or comment that isn't there.
 
 ## 2. Preserve verbatim
 
-Reproduce each comment **exactly** inside `\textit{``…''}` — original wording, symbols,
+Reproduce each comment **exactly** inside `\textit{``…"}` — original wording, symbols,
 math, and any typos. Do not paraphrase, soften, or "clean up" a comment; the editor compares
-your quote against their copy. Convert plain quotes to LaTeX ``…'' and escape `% & _ # $`.
+your quote against their copy. Convert plain quotes to LaTeX — open with `` `` ``, close with
+`''` or `"` (both render as a right double quote; the house letters use `` ``…" ``) — and
+escape `% & _ # $`.
 
 ## 3. Classify (for planning the reply, not shown in the letter)
 

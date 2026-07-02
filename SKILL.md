@@ -8,9 +8,8 @@ description: >-
   IEEE (TSMC-Systems, TCYB, TAI, TCAS-I, TNNLS), Elsevier (Neural Networks), or Science
   China Information Sciences. Triggers: reviewer comments, editor/AE decision letter,
   response draft, SUMMARY OF CHANGES, rebuttal, response to reviewers, 审稿意见回复,
-  逐点回复, 修回信, 大修回复, 小修回复, 如何回复审稿人. Produces the group's house-style
-  IEEEtran LaTeX reply.
-version: 0.1.0
+  逐点回复, 修回信, 大修回复, 小修回复, 如何回复审稿人.
+version: 0.1.1
 status: Beta
 ---
 
@@ -22,6 +21,13 @@ response letter** in the group's house template — the IEEEtran "SUMMARY OF CHA
 The letter is an editor-facing verification document: every editor and reviewer concern is
 preserved **verbatim**, answered, and mapped to a concrete manuscript change, a justified
 scientific reason, or an explicit `AUTHOR_INPUT_NEEDED` placeholder.
+
+## When not to use
+
+Nature-portfolio journals (Nature, Nature Communications, Communications Physics, …) → use
+`nature-response` instead. A journal not listed in the description but within the group's
+scope → still use this skill: keep the house shell, mirror that manuscript's reference
+style, and note the inference in the tracker.
 
 ## Default stance
 
@@ -49,7 +55,7 @@ If comment boundaries are ambiguous, flag it — do not invent reviewer structur
 4. Classify each item, plan the action, note missing input → tracker.
 5. Scaffold the per-recipient pages from [assets/reply-template.tex](assets/reply-template.tex).
 6. Draft each reply with house phrasing from [assets/phrase-bank.md](assets/phrase-bank.md): acknowledge → action → `(please see page N … in the revised version for details)`.
-7. Paste author-supplied revised text/equations/figures/tables inline in `\textcolor{blue}{...}`, using `\setcounter{remark|figure|table}{}` to match manuscript numbering. Each pasted blue block must be the **same** passage highlighted blue in the marked (有标记) manuscript at the cited page — reply blue ⟺ manuscript blue ⟺ page pointer are one and the same change (see [references/house-style.md](references/house-style.md)). **Always close a pasted block with a manuscript locator** so the reviewer can find the change — the connector sentence `In the revised version, we have added the above statement in Section X on page N.` (or the short `(please see page N of Section X …)` parenthetical); a pasted block with no page/section locator is incomplete (unknown page → `[PAGE?]` placeholder, never a guess). Missing content → an underscore-free red placeholder `\textcolor{red}{[AUTHOR INPUT NEEDED: …]}` (raw `_` breaks LaTeX; keep `AUTHOR_INPUT_NEEDED` as the keyword only in the tracker/flags).
+7. Paste author-supplied revised content inline in `\textcolor{blue}{...}`, `\setcounter{remark|figure|table}{}` aligned to the manuscript's numbering, and **close every pasted block with a page/section locator**. The pasted blue block must be the same passage highlighted blue in the marked (有标记) manuscript — the three-way rule and connector sentences are in [references/house-style.md](references/house-style.md). Missing text/page → the red placeholders in [references/comment-handling.md](references/comment-handling.md); never guess, and never a raw `_` in text mode.
 8. Close each reviewer with the `$\bullet$` "Some key points of the revision" / "Other significant changes in the paper" list.
 9. Run [references/qa-checklist.md](references/qa-checklist.md): completeness, traceability, no fabrication, LaTeX compile sanity.
 10. Return the `.tex` (primary) + a short comment→action tracker + `AUTHOR_INPUT_NEEDED` flags (+ 中文核对 if the user worked in Chinese).
